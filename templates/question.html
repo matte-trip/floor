@@ -1,0 +1,57 @@
+<head>
+    <link rel="icon" href="data:;base64,=">
+
+    <title>Question</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+<script>
+
+    window.onload = function () {
+
+        document.getElementById("{{ answer }}").onclick = function () {
+            document.getElementById("{{ answer }}").style.color = 'green';
+        };
+
+        document.getElementById("{{ wrong_1 }}").onclick = function () {
+            document.getElementById("{{ wrong_1 }}").style.color = 'red';
+        };
+
+        document.getElementById("{{ wrong_2 }}").onclick = function () {
+            document.getElementById("{{ wrong_2 }}").style.color = 'red';
+        };
+
+        document.getElementById("{{ wrong_3 }}").onclick = function () {
+            document.getElementById("{{ wrong_3 }}").style.color = 'red';
+        };
+    };
+
+</script>
+
+<body style="display: flex; flex-direction: column; background-color: black; color: white">
+
+<a style="text-align: center" href="{{ url_for('question', q_id=next) }}">
+    <button>Next Question</button>
+</a>
+
+<p>{{ question_text }}</p>
+
+<label id="A">
+    <input type="radio" name="answer">{{ a }}
+</label>
+
+<label id="B">
+    <input type="radio" name="answer">{{ b }}
+</label>
+
+<label id="C">
+    <input type="radio" name="answer">{{ c }}
+</label>
+
+<label id="D">
+    <input type="radio" name="answer">{{ d }}
+</label>
+
+</body>

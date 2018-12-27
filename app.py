@@ -917,7 +917,7 @@ questions = [
      "B. cost less per byte and provide lower capacities",
      "C. cost more per byte and provide higher capacities",
      "D. cost more per byte and provide lower capacities"),
-    ("___ bytes of storage are needed to represent the name \"Sarah.\"",
+    ("___ bytes of storage are needed to represent the name \"Sarah\"",
      "A. Two",
      "B. Three",
      "C. Five",

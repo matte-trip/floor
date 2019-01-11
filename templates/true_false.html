@@ -1,0 +1,42 @@
+<head>
+    <link rel="icon" href="data:;base64,=">
+
+    <title>Question</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+<script>
+
+    window.onload = function () {
+
+        document.getElementById("{{ answer }}").onclick = function () {
+            document.getElementById("{{ answer }}").style.color = 'green';
+        };
+
+        document.getElementById("{{ wrong }}").onclick = function () {
+            document.getElementById("{{ wrong }}").style.color = 'red';
+        };
+
+    };
+
+</script>
+
+<body style="display: flex; flex-direction: column; background-color: black; color: white">
+
+<a style="text-align: center" href="{{ url_for('question', q_type=next_t, q_id=next) }}">
+    <button>Next Question</button>
+</a>
+
+<p>{{ question_text }}</p>
+
+<label id="TRUE">
+    <input type="radio" name="answer">TRUE
+</label>
+
+<label id="FALSE">
+    <input type="radio" name="answer">FALSE
+</label>
+
+</body>

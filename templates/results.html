@@ -1,0 +1,23 @@
+<head>
+    <link rel="icon" href="data:;base64,=">
+    <title>Results</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+<body style="background-color: black; color: white; text-align: center">
+
+<a href="{{ url_for('homepage') }}">
+    <button>Homepage</button>
+</a>
+<p> </p>
+<a style="text-align: center" href="{{ url_for('search') }}">
+    <button>Search</button>
+</a>
+
+{% for result in results %}
+    <p>{{ result }}</p>
+{% endfor %}
+
+</body>

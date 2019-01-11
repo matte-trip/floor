@@ -1,10 +1,10 @@
 # coding=utf-8
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 import random
 
 app = Flask(__name__)
 
-answers = ["D", "A", "D", "B", "C", "B", "D", "C", "A", "D", "C", "C", "D", "C", "C", "D", "C", "A", "D", "D", "D", "B",
+answers_multiple = ["D", "A", "D", "B", "C", "B", "D", "C", "A", "D", "C", "C", "D", "C", "C", "D", "C", "A", "D", "D", "D", "B",
            "A", "D", "C", "B", "D", "B", "A", "A", "D", "A", "C", "D", "B", "D", "D", "B", "C", "A", "D", "A", "D", "C",
            "D", "B", "A", "C", "D", "B", "C", "D", "D", "C", "B", "A", "C", "D", "D", "A", "A", "C", "D", "C", "D", "C",
            "A", "C", "D", "B", "D", "A", "C", "B", "B", "A", "D", "A", "B", "B", "D", "A", "D", "D", "C", "D", "C", "B",
@@ -3212,7 +3212,7 @@ multiple = [
      "C. cluster detection",
      "D. market basket analysis"),
     (
-        "By targeting customers who are already known to be likely buyers, the effectiveness of a given marketing effort is significantly increased—if the marketing takes the form of ___.",
+        "By targeting customers who are already known to be likely buyers, the effectiveness of a given marketing effort is significantly increased-if the marketing takes the form of ___.",
         "A. in-store displays",
         "B. catalogs",
         "C. a direct offer",
@@ -5315,8 +5315,7 @@ true_false = [
     "In information systems activities, the processing of data resources typically takes the form of data entry activities.",
     "In information systems activities, a user interface commonly refers to a more convenient and efficient method of end-user input and output with a computer system.",
     "Calculating employees' pay, federal taxes, and other payroll deductions is a business example of a computerized processing activity.",
-    "After data has been entered into a computerized information system, it is usually not necessary to correct or update it. That is the benefit of a computerized system—once entered, always correct.",
-
+    "After data has been entered into a computerized information system, it is usually not necessary to correct or update it. That is the benefit of a computerized system-once entered, always correct.",
     "When an organization uses information technology to develop products, services and capabilities in order to gain a strategic advantage over competitive forces in the global marketplace, it is using information systems in a strategic role.",
     "Competition is a negative characteristic in business that can require significant resources to overcome.",
     "Most products and services have some sort of substitute available to the consumer.",
@@ -5417,7 +5416,7 @@ true_false = [
     "It is predicted that in the future we will be able to back up our biological memories.",
 
     "Software is considered the variable part of the computer, whereas the hardware is considered the invariable part.",
-    "Unlike hardware, which has several categories, software has only one category—computer applications.",
+    "Unlike hardware, which has several categories, software has only one category-computer applications.",
     "General purpose application programs perform common information processing jobs for end users.",
     "COTS software is custom, off-the-shelf software that is purchased and then modified to meet the needs of the customer.",
     "The specifications and functionality of custom software are controlled or retained by the developing organization.",
@@ -6374,7 +6373,7 @@ fill = [
     "To solve the problems encountered with the file processing approach, the _______________ management approach was conceived. It is the foundation of modern methods of managing organizational data.",
     "Database _______________ involves using transaction processing systems and other tools to add, delete, update, and correct the data in a database.",
     "SQL is an acronym for _______________. It is an international standard query language found in many DBMS packages.",
-    "The basic form of a SQL query is SELECT…FROM… _______________.",
+    "The basic form of a SQL query is SELECT...FROM... _______________.",
     "Boolean logic consists of three logical operators: AND, OR, and _______________.",
     "_______________ systems are information systems that use common standards for hardware, software, applications, and networking.",
     "Open systems provide greater _______________. That is, the ability of networked computers and other devices to easily access and communicate with each other and share information.",
@@ -6625,6 +6624,54 @@ def homepage():
                            next_q=next_q)
 
 
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+
+    if request.method == "POST":
+        part_of_question = request.form['part_of_question']
+        return redirect(url_for('s', part_of_question=part_of_question))
+
+    return render_template("search.html")
+
+
+@app.route('/s/<part_of_question>')
+def s(part_of_question):
+
+    match_found = []
+    answers_of_match = []
+
+    multi_only_question = []
+    for i in range(0, len(multiple)-1):
+        multi_only_question.append(multiple[i][0])
+
+    multiple_and_answers = zip(multi_only_question, answers_multiple)
+    for question_text, question_answer in multiple_and_answers:
+        if part_of_question.lower() in question_text.lower():
+            match_found.append(question_text)
+            answers_of_match.append(question_answer)
+
+    true_false_and_answers = zip(true_false, answers_true_false)
+    for question_text, question_answer in true_false_and_answers:
+        if part_of_question.lower() in question_text.lower():
+            match_found.append(question_text)
+            answers_of_match.append(question_answer)
+
+    fill_and_answers = zip(fill, answers_fill)
+    for question_text, question_answer in fill_and_answers:
+        if part_of_question.lower() in question_text.lower():
+            match_found.append(question_text)
+            answers_of_match.append(question_answer)
+
+    results = []
+    match_and_answers = zip(match_found, answers_of_match)
+    for match, match_answer in match_and_answers:
+        results.append(str(match) + " -> " + str(match_answer))
+
+    return render_template("results.html",
+
+                           results=results)
+
+
 @app.route('/<q_type>/<q_id>')
 def question(q_type, q_id):
     next_t = random.randint(0, 2)
@@ -6637,7 +6684,7 @@ def question(q_type, q_id):
 
     if q_type == "0":
         wrong = ["A", "B", "C", "D"]
-        wrong.remove(answers[int(q_id)])
+        wrong.remove(answers_multiple[int(q_id)])
 
         return render_template("question.html",
 
@@ -6646,7 +6693,7 @@ def question(q_type, q_id):
                                b=multiple[int(q_id)][2],
                                c=multiple[int(q_id)][3],
                                d=multiple[int(q_id)][4],
-                               answer=answers[int(q_id)],
+                               answer=answers_multiple[int(q_id)],
 
                                wrong_1=wrong[0],
                                wrong_2=wrong[1],

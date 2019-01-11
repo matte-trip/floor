@@ -1,0 +1,20 @@
+<head>
+    <link rel="icon" href="data:;base64,=">
+    <title>Search</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+<body style="background-color: black; color: white; text-align: center">
+
+<a href="{{ url_for('homepage') }}">
+    <button>Homepage</button>
+</a>
+<p> </p>
+<form action="{{ url_for('search') }}" method="post">
+    <label>Input part of a question: <input type="text" name="part_of_question"></label>
+    <input type="submit" value="Search">
+</form>
+
+</body>

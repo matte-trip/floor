@@ -1,6 +1,5 @@
 <head>
     <link rel="icon" href="data:;base64,=">
-
     <title>Homepage</title>
 </head>
 
@@ -12,9 +11,13 @@
 <p>Information Systems - Polito</p>
 <p>All 1791 questions you can find in the written exam</p>
 <p>Multiple + True or False + Fill In</p>
-
 <a href="{{ url_for('question', q_type=next_t, q_id=next_q) }}">
     <button>START!</button>
+</a>
+
+<p>Search for a question</p>
+<a href="{{ url_for('search') }}">
+    <button>Search</button>
 </a>
 
 <p>Buy me a beer if you liked it ;)</p>

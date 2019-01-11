@@ -1,7 +1,6 @@
 <head>
     <link rel="icon" href="data:;base64,=">
-
-    <title>Question</title>
+    <title>True or False</title>
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +24,14 @@
 
 <body style="display: flex; flex-direction: column; background-color: black; color: white">
 
+<a style="text-align: center" href="{{ url_for('homepage') }}">
+    <button>Homepage</button>
+</a>
+<br>
+<a style="text-align: center" href="{{ url_for('search') }}">
+    <button>Search</button>
+</a>
+<br>
 <a style="text-align: center" href="{{ url_for('question', q_type=next_t, q_id=next) }}">
     <button>Next Question</button>
 </a>

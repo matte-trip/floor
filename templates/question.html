@@ -32,7 +32,7 @@
 
 <body style="display: flex; flex-direction: column; background-color: black; color: white">
 
-<a style="text-align: center" href="{{ url_for('question', q_id=next) }}">
+<a style="text-align: center" href="{{ url_for('question', q_type=next_t, q_id=next) }}">
     <button>Next Question</button>
 </a>
 

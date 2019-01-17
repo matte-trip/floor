@@ -5,84 +5,80 @@ import random
 app = Flask(__name__)
 
 answers_multiple = ["D", "A", "D", "B", "C", "B", "D", "C", "A", "D", "C", "C", "D", "C", "C", "D", "C", "A", "D", "D",
-                    "D", "B",
-                    "A", "D", "C", "B", "D", "B", "A", "A", "D", "A", "C", "D", "B", "D", "D", "B", "C", "A", "D", "A",
-                    "D", "C",
-                    "D", "B", "A", "C", "D", "B", "C", "D", "D", "C", "B", "A", "C", "D", "D", "A", "A", "C", "D", "C",
-                    "D", "C",
-                    "A", "C", "D", "B", "D", "A", "C", "B", "B", "A", "D", "A", "B", "B", "D", "A", "D", "D", "C", "D",
-                    "C", "B",
-                    "A", "C", "C", "C", "B", "D", "D", "D", "D", "C", "A", "A", "B", "C", "A", "A", "B", "B", "A", "D",
-                    "D", "D",
-                    "D", "D", "B", "A", "B", "C", "D", "A", "B", "A", "C", "B", "D", "D", "B", "A", "B", "C", "B", "C",
-                    "A", "B",
-                    "C", "A", "A", "A", "C", "D", "A", "A", "A", "B", "D", "A", "B", "D", "D", "C", "C", "A", "A", "D",
+                    "D", "B", "A", "D", "C", "B", "D", "B", "A", "A", "D", "A", "C", "D", "B", "D", "D", "B", "C", "A",
+                    "D", "A", "D", "C", "D", "B", "A", "C", "D", "B", "C", "D", "D", "C", "B", "A", "C", "D", "D", "A",
+                    "A", "C", "D", "C", "D", "C", "A", "C", "D", "B", "D", "A", "C", "B", "B", "A", "D", "A", "B", "B",
+                    "D", "A", "D", "D", "C", "D", "C", "B", "A", "C", "C", "C", "B", "D", "D", "D", "D", "C", "A", "A",
+                    "B", "C", "A", "A", "B", "B", "A", "D", "D", "D", "D", "D", "B", "A", "B", "C", "D", "A", "B", "A",
+                    "C", "B", "D", "D", "B", "A", "B", "C",
                     "B", "C",
-                    "C", "A", "D", "B", "B", "C", "D", "A", "D", "D", "B", "D", "A", "C", "A", "B", "D", "D", "D", "C",
-                    "C", "A",
-                    "A", "C", "D", "C", "A", "C", "A", "C", "D", "C", "A", "D", "A", "C", "B", "D", "B", "B", "A", "D",
-                    "C", "A",
-                    "B", "A", "B", "D", "A", "A", "C", "D", "D", "C", "C", "C", "C", "C", "B", "D", "B", "C", "C", "A",
+                    "A", "B", "C", "A", "A", "A", "C", "D", "A", "A", "A", "B", "D", "A", "B", "D", "D", "C", "C", "A",
                     "A", "D",
-                    "D", "A", "A", "C", "A", "B", "A", "D", "A", "A", "C", "D", "D", "D", "B", "C", "D", "A", "C", "A",
+                    "B", "C", "C", "A", "D", "B", "B", "C", "D", "A", "D", "D", "B", "D", "A", "C", "A", "B", "D", "D",
                     "D", "C",
-                    "D", "A", "C", "C", "D", "D", "A", "D", "B", "C", "A", "D", "B", "C", "A", "B", "C", "A", "B", "C",
+                    "C", "A", "A", "C", "D", "C", "A", "C", "A", "C", "D", "C", "A", "D", "A", "C", "B", "D", "B", "B",
+                    "A", "D",
+                    "C", "A", "B", "A", "B", "D", "A", "A", "C", "D", "D", "C", "C", "C", "C", "C", "B", "D", "B", "C",
+                    "C", "A",
+                    "A", "D", "D", "A", "A", "C", "A", "B", "A", "D", "A", "A", "C", "D", "D", "D", "B", "C", "D", "A",
+                    "C", "A",
+                    "D", "C", "D", "A", "C", "C", "D", "D", "A", "D", "B", "C", "A", "D", "B", "C", "A", "B", "C", "A",
+                    "B", "C",
+                    "D", "B", "A", "C", "A", "B", "D", "C", "A", "D", "C", "B", "C", "B", "A", "B", "D", "A", "C", "D",
+                    "A", "B",
+                    "C", "D", "D", "A", "C", "C", "B", "A", "B", "A", "D", "C", "D", "D", "B", "A", "B", "B", "C", "D",
+                    "C", "A",
+                    "B", "B", "A", "C", "C", "D", "C", "B", "D", "C", "A", "D", "C", "B", "A", "C", "D", "D", "B", "C",
+                    "A", "A",
+                    "D", "D", "A", "A", "B", "D", "B", "D", "C", "D", "C", "B", "D", "C", "A", "A", "A", "B", "B", "B",
+                    "B", "C",
+                    "B", "B", "D", "D", "D", "B", "C", "D", "A", "C", "D", "C", "A", "C", "B", "B", "A", "C", "C", "D",
+                    "B", "A",
+                    "B", "A", "D", "C", "C", "C", "A", "B", "C", "D", "D", "A", "C", "C", "D", "B", "B", "C", "D", "D",
+                    "D", "D",
+                    "B", "C", "D", "A", "C", "B", "A", "B", "C", "A", "D", "C", "C", "A", "D", "A", "B", "D", "C", "B",
+                    "C", "C",
+                    "B", "D", "D", "C", "C", "B", "B", "D", "C", "A", "B", "A", "C", "A", "B", "C", "C", "D", "D", "B",
+                    "D", "D",
+                    "A", "C", "A", "D", "B", "A", "D", "C", "C", "A", "C", "B", "C", "B", "D", "C", "A", "B", "D", "A",
+                    "A", "B",
+                    "D", "D", "B", "A", "C", "D", "B", "B", "A", "D", "C", "D", "A", "C", "D", "C", "D", "A", "D", "A",
+                    "A", "B",
+                    "B", "D", "C", "D", "A", "A", "D", "D", "B", "A", "B", "C", "B", "A", "A", "B", "D", "A", "A", "D",
                     "D", "B",
-                    "A", "C", "A", "B", "D", "C", "A", "D", "C", "B", "C", "B", "A", "B", "D", "A", "C", "D", "A", "B",
-                    "C", "D",
-                    "D", "A", "C", "C", "B", "A", "B", "A", "D", "C", "D", "D", "B", "A", "B", "B", "C", "D", "C", "A",
-                    "B", "B",
-                    "A", "C", "C", "D", "C", "B", "D", "C", "A", "D", "C", "B", "A", "C", "D", "D", "B", "C", "A", "A",
-                    "D", "D",
-                    "A", "A", "B", "D", "B", "D", "C", "D", "C", "B", "D", "C", "A", "A", "A", "B", "B", "B", "B", "C",
-                    "B", "B",
-                    "D", "D", "D", "B", "C", "D", "A", "C", "D", "C", "A", "C", "B", "B", "A", "C", "C", "D", "B", "A",
+                    "D", "C", "A", "D", "D", "D", "D", "D", "A", "A", "D", "C", "B", "C", "D", "D", "B", "D", "C", "C",
                     "B", "A",
-                    "D", "C", "C", "C", "A", "B", "C", "D", "D", "A", "C", "C", "D", "B", "B", "C", "D", "D", "D", "D",
-                    "B", "C",
-                    "D", "A", "C", "B", "A", "B", "C", "A", "D", "C", "C", "A", "D", "A", "B", "D", "C", "B", "C", "C",
-                    "B", "D",
-                    "D", "C", "C", "B", "B", "D", "C", "A", "B", "A", "C", "A", "B", "C", "C", "D", "D", "B", "D", "D",
-                    "A", "C",
-                    "A", "D", "B", "A", "D", "C", "C", "A", "C", "B", "C", "B", "D", "C", "A", "B", "D", "A", "A", "B",
-                    "D", "D",
-                    "B", "A", "C", "D", "B", "B", "A", "D", "C", "D", "A", "C", "D", "C", "D", "A", "D", "A", "A", "B",
-                    "B", "D",
-                    "C", "D", "A", "A", "D", "D", "B", "A", "B", "C", "B", "A", "A", "B", "D", "A", "A", "D", "D", "B",
-                    "D", "C",
-                    "A", "D", "D", "D", "D", "D", "A", "A", "D", "C", "B", "C", "D", "D", "B", "D", "C", "C", "B", "A",
+                    "C", "D", "B", "D", "B", "A", "C", "D", "B", "D", "B", "D", "A", "C", "D", "B", "D", "D", "D", "A",
                     "C", "D",
-                    "B", "D", "B", "A", "C", "D", "B", "D", "B", "D", "A", "C", "D", "B", "D", "D", "D", "A", "C", "D",
-                    "B", "B",
-                    "B", "B", "C", "D", "D", "B", "A", "B", "C", "A", "B", "C", "B", "C", "C", "B", "B", "A", "A", "C",
-                    "D", "D",
-                    "C", "D", "A", "B", "D", "B", "A", "A", "B", "D", "C", "C", "D", "B", "D", "D", "C", "A", "B", "C",
-                    "B", "D",
-                    "D", "A", "D", "B", "C", "B", "A", "A", "B", "C", "D", "B", "B", "C", "A", "B", "D", "C", "A", "D",
-                    "B", "B",
-                    "A", "B", "D", "C", "B", "A", "C", "C", "B", "B", "B", "B", "D", "D", "C", "B", "A", "A", "C", "A",
-                    "B", "C",
-                    "D", "D", "A", "B", "D", "B", "A", "C", "C", "B", "D", "A", "C", "D", "A", "B", "D", "C", "A", "D",
-                    "B", "B",
-                    "D", "C", "B", "A", "A", "C", "B", "A", "D", "A", "C", "B", "D", "C", "D", "A", "D", "B", "D", "B",
-                    "B", "C",
-                    "D", "A", "C", "C", "C", "D", "A", "A", "A", "C", "B", "C", "D", "A", "A", "D", "B", "D", "A", "B",
-                    "C", "B",
-                    "B", "B", "B", "B", "D", "A", "B", "C", "A", "C", "B", "D", "B", "D", "D", "D", "D", "D", "A", "C",
-                    "B", "A",
-                    "B", "C", "C", "D", "A", "D", "A", "A", "A", "A", "B", "B", "B", "D", "B", "B", "B", "A", "C", "D",
-                    "A", "B",
-                    "B", "D", "C", "C", "D", "C", "B", "C", "A", "A", "B", "C", "A", "B", "C", "B", "D", "B", "C", "A",
-                    "D", "D",
-                    "D", "A", "A", "C", "B", "A", "D", "B", "D", "C", "A", "C", "C", "B", "A", "A", "A", "B", "A", "D",
+                    "B", "B", "B", "B", "C", "D", "D", "B", "A", "B", "C", "A", "B", "C", "B", "C", "C", "B", "B", "A",
                     "A", "C",
-                    "A", "D", "D", "B", "C", "A", "D", "B", "B", "B", "D", "C", "D", "D", "D", "B", "C", "B", "D", "B",
+                    "D", "D", "C", "D", "A", "B", "D", "B", "A", "A", "B", "D", "C", "C", "D", "B", "D", "D", "C", "A",
                     "B", "C",
-                    "C", "C", "A", "C", "D", "B", "D", "D", "B", "A", "C", "A", "C", "D", "A", "B", "C", "D", "C", "D",
+                    "B", "D", "D", "A", "D", "B", "C", "B", "A", "A", "B", "C", "D", "B", "B", "C", "A", "B", "D", "C",
+                    "A", "D",
+                    "B", "B", "A", "B", "D", "C", "B", "A", "C", "C", "B", "B", "B", "B", "D", "D", "C", "B", "A", "A",
+                    "C", "A",
+                    "B", "C", "D", "D", "A", "B", "D", "B", "A", "C", "C", "B", "D", "A", "C", "D", "A", "B", "D", "C",
+                    "A", "D",
+                    "B", "B", "D", "C", "B", "A", "A", "C", "B", "A", "D", "A", "C", "B", "D", "C", "D", "A", "D", "B",
+                    "D", "B",
+                    "B", "C", "D", "A", "C", "C", "C", "D", "A", "A", "A", "C", "B", "C", "D", "A", "A", "D", "B", "D",
                     "A", "B",
-                    "C", "B", "A", "C", "D", "B", "D", "A", "C", "D", "B", "A", "C", "B", "D", "D", "C", "B", "A", "C",
-                    "D", "C",
-                    "B", "D", "A", "D", "A", "B", "D", "B"]
+                    "C", "B", "B", "B", "B", "B", "D", "A", "B", "C", "A", "C", "B", "D", "B", "D", "D", "D", "D", "D",
+                    "A", "C",
+                    "B", "A", "B", "C", "C", "D", "A", "D", "A", "A", "A", "A", "B", "B", "B", "D", "B", "B", "B", "A",
+                    "C", "D",
+                    "A", "B", "B", "D", "C", "C", "D", "C", "B", "C", "A", "A", "B", "C", "A", "B", "C", "B", "D", "B",
+                    "C", "A",
+                    "D", "D", "D", "A", "A", "C", "B", "A", "D", "B", "D", "C", "A", "C", "C", "B", "A", "A", "A", "B",
+                    "A", "D",
+                    "A", "C", "A", "D", "D", "B", "C", "A", "D", "B", "B", "B", "D", "C", "D", "D", "D", "B", "C", "B",
+                    "D", "B",
+                    "B", "C", "C", "C", "A", "C", "D", "B", "D", "D", "B", "A", "C", "A", "C", "D", "A", "B", "C", "D",
+                    "C", "D",
+                    "A", "B", "C", "B", "A", "C", "D", "B", "D", "A", "C", "D", "B", "A", "C", "B", "D", "D", "C", "B",
+                    "A", "C",
+                    "D", "C", "B", "D", "A", "D", "A", "B", "D", "B"]
 
 multiple = [
 
@@ -6678,14 +6674,29 @@ def s(part_of_question):
     answers_of_match = []
 
     multi_only_question = []
-    for i in range(0, len(multiple) - 1):
+    all_as = []
+    all_bs = []
+    all_cs = []
+    all_ds = []
+    for i in range(len(multiple)):
         multi_only_question.append(multiple[i][0])
+        all_as.append(multiple[i][1])
+        all_bs.append(multiple[i][2])
+        all_cs.append(multiple[i][3])
+        all_ds.append(multiple[i][4])
 
-    multiple_and_answers = zip(multi_only_question, answers_multiple)
-    for question_text, question_answer in multiple_and_answers:
+    multiple_and_answers = zip(multi_only_question, answers_multiple, all_as, all_bs, all_cs, all_ds)
+    for question_text, question_answer, a, b, c, d in multiple_and_answers:
         if part_of_question.lower() in question_text.lower():
             match_found.append(question_text)
-            answers_of_match.append(question_answer)
+            if question_answer == "A":
+                answers_of_match.append(a)
+            if question_answer == "B":
+                answers_of_match.append(b)
+            if question_answer == "C":
+                answers_of_match.append(c)
+            if question_answer == "D":
+                answers_of_match.append(d)
 
     true_false_and_answers = zip(true_false, answers_true_false)
     for question_text, question_answer in true_false_and_answers:

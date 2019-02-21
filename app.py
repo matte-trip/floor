@@ -1230,11 +1230,11 @@ multiple = [
      "B. maintaining accounting records, such as a general ledger",
      "C. keeping up-to-the-minute inventory records",
      "D. tracking human resources"),
-    ("When using a spreadsheet package to answer what if multiple, the user must change:",
+    ("When using a spreadsheet package to answer what if questions, the user must change:",
      "A. Only a selected variable to see the impact of that change",
      "B. A number of variables to make a single change to the spreadsheet output",
      "C. All the formulas in order to calculate new values",
-     "D. Nothing - spreadsheets cannot be used to answer what if multiple"),
+     "D. Nothing - spreadsheets cannot be used to answer what if questions"),
     ("Which one of the following would typically not be accomplished with presentation graphics software?",
      "A. Converting numerical data into graphics and displays",
      "B. Incorporating multimedia files into presentations",
@@ -3094,7 +3094,7 @@ multiple = [
         "B. Rite Aid",
         "C. KB Toys",
         "D. Office Depot"),
-    ("All of the following are key multiple for developing an e-commerce channel strategy except:",
+    ("All of the following are key questions for developing an e-commerce channel strategy except:",
      "A. How many employees do we want to assign to the project?",
      "B. What audiences are we trying to reach?",
      "C. Who owns the e-commerce channel within the organization?",
@@ -3450,19 +3450,19 @@ multiple = [
      "C. Tactical",
      "D. Scenario"),
     (
-        "All of the following are examples of multiple that would be asked when establishing an understanding the customer strategic vision except:",
+        "All of the following are examples of questions that would be asked when establishing an understanding the customer strategic vision except:",
         "A. Who are our customers?",
         "B. How can we add value for the customer with e-business services?",
         "C. How are our customers' priorities shifting?",
         "D. Who should be our target customers?"),
     (
-        "Which of the following is an example of multiple that would be asked when establishing a customer value strategic vision?",
+        "Which of the following is an example of question that would be asked when establishing a customer value strategic vision?",
         "A. Who are our customers?",
         "B. How can we add value for the customer with e-business services?",
         "C. How are our customers' priorities shifting?",
         "D. Who should be our target customers?"),
     (
-        "All of the following are examples of multiple that would be asked when establishing a competition strategic vision except:",
+        "All of the following are examples of questions that would be asked when establishing a competition strategic vision except:",
         "A. Who are our real competitors?",
         "B. How are our competitor's priorities shifting?",
         "C. What is our toughest competitor's business model?",
@@ -3531,7 +3531,7 @@ multiple = [
         "B. pricing",
         "C. sustainability",
         "D. customer value"),
-    ("Which of the following multiple best represents the sustainability component of a business model?",
+    ("Which of the following questions best represents the sustainability component of a business model?",
      "A. What is it about the firm that makes it difficult for other firms to imitate it?",
      "B. What are the firm's capabilities and capabilities gaps that need to be filled?",
      "C. Where do the dollars come from?",
@@ -3825,7 +3825,7 @@ multiple = [
      "B. Monitor, evaluate, and modify the business system as needed",
      "C. Develop logical models of new system",
      "D. Convert to the new business system"),
-    ("A feasibility study will answer all of the following multiple except:",
+    ("A feasibility study will answer all of the following questions except:",
      "A. Does the technology exist that is necessary to implement the proposed system?",
      "B. Is the proposed system technologically, economically, and operationally feasible?",
      "C. Which brand and model of computer will be used by the proposed system?",
@@ -4609,23 +4609,23 @@ multiple = [
         "C. Which hardware platform do we centralize on?",
         "D. Who do we blame if an IT initiative fails?"),
     (
-        "Many companies have policies that require managers to be involved in IT decisions that affect their business units. This helps managers:",
-        "A. Improve the strategic customer value of information technology",
-        "B. Avoid IS performance problems in their business units and development projects",
-        "C. Monitor the problems of employee resistance and poor user interface design",
-        "D. See other opportunities for IT development"),
+    "Many companies have policies that require managers to be involved in IT decisions that affect their business units. This helps managers:",
+    "A. Improve the strategic customer value of information technology",
+    "B. Avoid IS performance problems in their business units and development projects",
+    "C. Monitor the problems of employee resistance and poor user interface design",
+    "D. See other opportunities for IT development"),
     (
-        "When a company experiences excessive technical and process standardization that limit the flexibility of business units, or frequent exceptions to the standards that increase costs and limit business synergies, this is often the result of senior management failing to answer the question:",
-        "A. Which IT capabilities should be companywide?",
-        "B. How much should be spent on IT?",
-        "C. Which business processes should receive our IT dollars?",
-        "D. Whom should we blame if an IT initiative fails?"),
+    "When a company experiences excessive technical and process standardization that limit the flexibility of business units, or frequent exceptions to the standards that increase costs and limit business synergies, this is often the result of senior management failing to answer the question:",
+    "A. Which IT capabilities should be companywide?",
+    "B. How much should be spent on IT?",
+    "C. Which business processes should receive our IT dollars?",
+    "D. Whom should we blame if an IT initiative fails?"),
     (
-        "When a company experiences a lack of focus, the IT unit can become overwhelmed as it tries to deliver many projects that may have little company-wide value or can't be implemented well simultaneously. This is often the result of senior management failing to answer the question:",
-        "A. Which IT capabilities should be companywide?",
-        "B. How much should be spent on IT?",
-        "C. Which business processes should receive our IT dollars?",
-        "D. Whom should we blame if an IT initiative fails?"),
+    "When a company experiences a lack of focus, the IT unit can become overwhelmed as it tries to deliver many projects that may have little company-wide value or can't be implemented well simultaneously. This is often the result of senior management failing to answer the question:",
+    "A. Which IT capabilities should be companywide?",
+    "B. How much should be spent on IT?",
+    "C. Which business processes should receive our IT dollars?",
+    "D. Whom should we blame if an IT initiative fails?"),
     ("What would senior management's role be in relation to the question Whom do we blame if an IT initiative fails?",
 
      "A. Decide which IT capabilities should be provided centrally and which should be developed by individual businesses",
@@ -4633,12 +4633,11 @@ multiple = [
      "C. Lead the decision making on the trade-offs between security and privacy on one hand and convenience on the other",
      "D. Assign a business executive to be accountable for every IT project, and monitor business metrics"),
     (
-        "What would senior management's role be in relation to the question What security and privacy risks will we accept?",
-
-        "A. Decide which IT capabilities should be provided centrally and which should be developed by individual businesses",
-        "B. Lead the decision making on the trade-offs between security and privacy on one hand and convenience on the other",
-        "C. Decide which features are needed on the basis of their costs and benefits",
-        "D. Assign a business executive to be accountable for every IT project, and monitor business metrics"),
+    "What would senior management's role be in relation to the question What security and privacy risks will we accept?",
+    "A. Decide which IT capabilities should be provided centrally and which should be developed by individual businesses",
+    "B. Lead the decision making on the trade-offs between security and privacy on one hand and convenience on the other",
+    "C. Decide which features are needed on the basis of their costs and benefits",
+    "D. Assign a business executive to be accountable for every IT project, and monitor business metrics"),
     ("The consequence of failing to establish how good IT services really need to be is:",
 
      "A. The company may fail to develop an IT platform that furthers its strategy, despite high IT expenditures",
@@ -4662,11 +4661,11 @@ multiple = [
      "C. Computerized Objectives and Internet Technologies",
      "D. Control Objectives for Information and related Technology"),
     (
-        "According to the text case, all the following lessons were learned from the COBIT implementation at Blue Cross, except:",
-        "A. Building in the controls makes the controls easier to sustain and it makes self-testing more efficient and effective",
-        "B. Developing appropriate controls should be left to the end users",
-        "C. It is best to build the controls into the process",
-        "D. If the controls are not built into the process, the area performing the self test may have to process data for a great many hours"),
+    "According to the text case, all the following lessons were learned from the COBIT implementation at Blue Cross, except:",
+    "A. Building in the controls makes the controls easier to sustain and it makes self-testing more efficient and effective",
+    "B. Developing appropriate controls should be left to the end users",
+    "C. It is best to build the controls into the process",
+    "D. If the controls are not built into the process, the area performing the self test may have to process data for a great many hours"),
     ("According to the text, we seem to have reached a point where virtually every CIO is a(n):",
      "A. global CIO - a leader whose sphere of influence (and headaches) spans continents",
      "B. global enterprise leader, capable of developing appropriate business and IT strategies for the global marketplace",
@@ -4738,11 +4737,11 @@ multiple = [
      "C. Dealing with multiple networks",
      "D. Controlling data communication security"),
     (
-        "By connecting their businesses to the online infrastructure of the Internet, companies can generally do all of the following except:",
-        "A. Expand their markets",
-        "B. Reduce communications and distribution costs",
-        "C. Improve their profit margins without massive outlays for new telecommunications facilities",
-        "D. Reduce the number of direct competitors"),
+    "By connecting their businesses to the online infrastructure of the Internet, companies can generally do all of the following except:",
+    "A. Expand their markets",
+    "B. Reduce communications and distribution costs",
+    "C. Improve their profit margins without massive outlays for new telecommunications facilities",
+    "D. Reduce the number of direct competitors"),
     ("Which of the following world regions has the highest per capita Internet usage?",
      "A. Asia",
      "B. Europe",
@@ -4754,17 +4753,17 @@ multiple = [
      "C. Access for consumers to their information",
      "D. Adequate security, data integrity, and enforcement provisions"),
     (
-        "According to the text, many countries view the process of transborder data flows as violating their laws for all the reasons, except:",
-        "A. national sovereignty",
-        "B. privacy legislation",
-        "C. laws designed to protect the local IT industry from competition",
-        "D. anti-terrorist security precautions"),
+    "According to the text, many countries view the process of transborder data flows as violating their laws for all the reasons, except:",
+    "A. national sovereignty",
+    "B. privacy legislation",
+    "C. laws designed to protect the local IT industry from competition",
+    "D. anti-terrorist security precautions"),
     (
-        "According to the Reporters Without Borders organization, 45 countries restrict their citizen's Internet access. Which of the following countries allows no public access to the Internet?",
-        "A. China",
-        "B. North Korea",
-        "C. Cuba",
-        "D. Saudi Arabia")
+    "According to the Reporters Without Borders organization, 45 countries restrict their citizen's Internet access. Which of the following countries allows no public access to the Internet?",
+    "A. China",
+    "B. North Korea",
+    "C. Cuba",
+    "D. Saudi Arabia")
 ]
 
 answers_true_false = [
@@ -4811,6 +4810,7 @@ answers_true_false = [
     "TRUE",
     "TRUE",
     "FALSE",
+
     "TRUE",
     "FALSE",
     "TRUE",
@@ -4851,6 +4851,7 @@ answers_true_false = [
     "FALSE",
     "TRUE",
     "TRUE",
+
     "FALSE",
     "FALSE",
     "TRUE",
@@ -4907,6 +4908,7 @@ answers_true_false = [
     "FALSE",
     "TRUE",
     "TRUE",
+
     "TRUE",
     "FALSE",
     "TRUE",
@@ -4959,6 +4961,7 @@ answers_true_false = [
     "TRUE",
     "FALSE",
     "TRUE",
+
     "FALSE",
     "FALSE",
     "TRUE",
@@ -4988,6 +4991,7 @@ answers_true_false = [
     "FALSE",
     "TRUE",
     "TRUE",
+
     "FALSE",
     "FALSE",
     "FALSE",
@@ -5036,6 +5040,7 @@ answers_true_false = [
     "FALSE",
     "TRUE",
     "FALSE",
+
     "TRUE",
     "FALSE",
     "FALSE",
@@ -5064,6 +5069,7 @@ answers_true_false = [
     "FALSE",
     "TRUE",
     "TRUE",
+
     "FALSE",
     "FALSE",
     "FALSE",
@@ -5088,6 +5094,7 @@ answers_true_false = [
     "TRUE",
     "TRUE",
     "FALSE",
+
     "FALSE",
     "TRUE",
     "TRUE",
@@ -5121,6 +5128,7 @@ answers_true_false = [
     "TRUE",
     "TRUE",
     "TRUE",
+
     "FALSE",
     "FALSE",
     "FALSE",
@@ -5351,6 +5359,7 @@ true_false = [
     "In information systems activities, a user interface commonly refers to a more convenient and efficient method of end-user input and output with a computer system.",
     "Calculating employees' pay, federal taxes, and other payroll deductions is a business example of a computerized processing activity.",
     "After data has been entered into a computerized information system, it is usually not necessary to correct or update it. That is the benefit of a computerized system-once entered, always correct.",
+
     "When an organization uses information technology to develop products, services and capabilities in order to gain a strategic advantage over competitive forces in the global marketplace, it is using information systems in a strategic role.",
     "Competition is a negative characteristic in business that can require significant resources to overcome.",
     "Most products and services have some sort of substitute available to the consumer.",
@@ -5391,7 +5400,6 @@ true_false = [
     "Explicit knowledge involves the how to knowledge that resides in workers.",
     "Successful knowledge management creates techniques, technologies, and rewards for getting employees to share what they know and to make better use of accumulated workplace knowledge.",
     "As an organization's learning process continues and its knowledge base expands, the knowledge creating company works to integrate its knowledge into its business processes, products, and services.",
-    "When an organization uses information technology to develop products, services and capabilities in order to gain a strategic advantage over competitive forces in the global marketplace, it is using information systems in a strategic role.",
 
     "All computers are systems of input, processing, output, storage, and distribution components.",
     "The first electronic digital computer was completed in the 1960s.",
@@ -5466,7 +5474,7 @@ true_false = [
     "A weblog is a website on which a company advertises its products in a very brief, yet commercial way.",
     "Blogs are online diaries from a particular point of view. They are personal in origin, not commercial.",
     "Some powerful word processing packages have built-in capabilities that end users can use to convert documents to HTML format for publication as web pages.",
-    "When a spreadsheet is used to answer what if multiple, the user must reenter the values and formulas into the cells in order to see the impact of the changes.",
+    "When a spreadsheet is used to answer what if questions, the user must reenter the values and formulas into the cells in order to see the impact of the changes.",
     "Presentation graphics packages help end users design and manage computer-generated slide shows that can contain text, graphics, and multimedia displays.",
     "Presentation graphics packages have gotten more powerful in recent years, but not even the top-end packages enable end users to publish to the World Wide Web.",
     "A personal information manager helps users store, organize, and retrieve information about customers and prospects, and schedule and manage appointments.",
@@ -5668,7 +5676,7 @@ true_false = [
     "Customers can shop at OfficeDepot.com at their homes, at their business, or at in-store kiosks.",
     "KBtoys.com is a commercial joint venture between two e-tailers of children's products.",
     "Barnesandnoble.com was created as an independent e-commerce company that was spun off by the Barnes & Noble book retail chain.",
-    "There is no universal e-commerce strategy or e-commerce channel choice that works for every company, industry, or type of business."
+    "There is no universal e-commerce strategy or e-commerce channel choice that works for every company, industry, or type of business.",
 
     "Even information that is outdated, inaccurate, or hard to understand has meaning, usefulness, and value.",
     "A new Web-based management tool known as a windshield displays critical information in an easy-to-read graphic format.",
@@ -5696,7 +5704,7 @@ true_false = [
     "The enterprise information portal is a customized, personalized, Web-based interface for corporate extranets.",
     "Companies should have clear criteria for determining when cases cannot be addressed through automation and who should deal with the exceptions.",
     "Adaptive learning systems can only modify their behaviors based on the information with which they are programmed.",
-    "An expert system applies reasoning to answer multiple, but cannot explain the reasoning process to the user who asked the question.",
+    "An expert system applies reasoning to answer questions, but cannot explain the reasoning process to the user who asked the question.",
     "Expert systems fail miserably in solving problems requiring a broad knowledge base.",
     "Expert systems learn from experience as they process information requests.",
     "Knowledge engineers perform a role similar to that of systems analysts in conventional information systems development.",
@@ -5704,7 +5712,7 @@ true_false = [
     "The Japanese ride on subway trains, use elevators, and drive cars that are guided or supported by fuzzy process controllers.",
     "Genetic algorithm software is being used to model a variety of scientific, technical, and business processes.",
 
-    "Team planning sessions frequently include answering strategic advantage multiple.",
+    "Team planning sessions frequently include answering strategic advantage questions.",
     "In a planning context, a virtual world is a microcosm of the real world.",
     "Creating a role-playing exercise to be used in supervisory training is not the same as creating a microworld.",
     "According to the text case, there are two basic types of IT risks.",
@@ -6645,13 +6653,13 @@ fill = [
 
 @app.route('/')
 def homepage():
-    next_t = random.randint(0, 2)
+    next_t = random.randint(0, 1)  # 2
     if next_t == 0:
         next_q = random.randint(0, len(multiple) - 1)
-    elif next_t == 1:
+    else:  # if next_t == 1
         next_q = random.randint(0, len(true_false) - 1)
-    else:
-        next_q = random.randint(0, len(fill) - 1)
+    # else:
+    #     next_q = random.randint(0, len(fill) - 1)
 
     return render_template("homepage.html",
 
@@ -6704,11 +6712,11 @@ def s(part_of_question):
             match_found.append(question_text)
             answers_of_match.append(question_answer)
 
-    fill_and_answers = zip(fill, answers_fill)
-    for question_text, question_answer in fill_and_answers:
-        if part_of_question.lower() in question_text.lower():
-            match_found.append(question_text)
-            answers_of_match.append(question_answer)
+    # fill_and_answers = zip(fill, answers_fill)
+    # for question_text, question_answer in fill_and_answers:
+    #     if part_of_question.lower() in question_text.lower():
+    #         match_found.append(question_text)
+    #         answers_of_match.append(question_answer)
 
     results = []
     match_and_answers = zip(match_found, answers_of_match)
@@ -6722,13 +6730,46 @@ def s(part_of_question):
 
 @app.route('/<q_type>/<q_id>')
 def question(q_type, q_id):
-    next_t = random.randint(0, 2)
-    if next_t == 0:
-        next_q = random.randint(0, len(multiple) - 1)
-    elif next_t == 1:
-        next_q = random.randint(0, len(true_false) - 1)
-    else:
-        next_q = random.randint(0, len(fill) - 1)
+    rnd_t = random.randint(0, 1)  # 2
+    if rnd_t == 0:
+        rnd_q = random.randint(0, len(multiple) - 1)
+    else:  # if rnd_t == 1
+        rnd_q = random.randint(0, len(true_false) - 1)
+    # else:
+    #     rnd_q = random.randint(0, len(fill) - 1)
+
+    prev_t = q_type
+    prev_q = int(q_id) - 1
+
+    next_t = q_type
+    next_q = int(q_id) + 1
+
+    if q_type == "0":
+        if q_id == "0":
+            prev_t = 1  # 2
+            prev_q = 536  # 387
+
+        elif q_id == "865":
+            next_t = 1
+            next_q = 0
+
+    if q_type == "1":
+        if q_id == "0":
+            prev_t = 0
+            prev_q = 865
+
+        elif q_id == "536":
+            next_t = 0  # 2
+            next_q = 0
+
+    # if q_type == "2":
+    #     if q_id == "0":
+    #         prev_t = 1
+    #         prev_q = 536
+    #
+    #     elif q_id == "387":
+    #         next_t = 0
+    #         next_q = 0
 
     if q_type == "0":
         wrong = ["A", "B", "C", "D"]
@@ -6747,8 +6788,14 @@ def question(q_type, q_id):
                                wrong_2=wrong[1],
                                wrong_3=wrong[2],
 
+                               prev_t=prev_t,
+                               prev_q=prev_q,
+
+                               rnd_t=rnd_t,
+                               rnd_q=rnd_q,
+
                                next_t=next_t,
-                               next=next_q)
+                               next_q=next_q)
 
     elif q_type == "1":
         wrong = ["TRUE", "FALSE"]
@@ -6761,18 +6808,30 @@ def question(q_type, q_id):
 
                                wrong=wrong[0],
 
-                               next_t=next_t,
-                               next=next_q)
+                               prev_t=prev_t,
+                               prev_q=prev_q,
 
-    elif q_type == "2":
-
-        return render_template("fill.html",
-
-                               question_text=fill[int(q_id)],
-                               answer=answers_fill[int(q_id)],
+                               rnd_t=rnd_t,
+                               rnd_q=rnd_q,
 
                                next_t=next_t,
-                               next=next_q)
+                               next_q=next_q)
+
+    # elif q_type == "2":
+    #
+    #     return render_template("fill.html",
+    #
+    #                            question_text=fill[int(q_id)],
+    #                            answer=answers_fill[int(q_id)],
+    #
+    #                            prev_t=prev_t,
+    #                            prev_q=prev_q,
+    #
+    #                            rnd_t=rnd_t,
+    #                            rnd_q=rnd_q,
+    #
+    #                            next_t=next_t,
+    #                            next_q=next_q)
 
 
 if __name__ == '__main__':

@@ -28,9 +28,31 @@
     <button>Search</button>
 </a>
 <br>
-<a style="text-align: center" href="{{ url_for('question', q_type=next_t, q_id=next) }}">
-    <button>Next Question</button>
-</a>
+<table style="text-align: center; width: 80%; margin-left: 10%;">
+    <tr>
+
+        <td>
+            <a style="text-align: center; margin-right: 5px"
+               href="{{ url_for('question', q_type=prev_t, q_id=prev_q) }}">
+                <button><</button>
+            </a>
+        </td>
+
+        <td>
+            <a style="text-align: center; display: inline" href="{{ url_for('question', q_type=rnd_t, q_id=rnd_q) }}">
+                <button>Random</button>
+            </a>
+        </td>
+
+        <td>
+            <a style="text-align: center; padding-left: 5px; display: inline"
+               href="{{ url_for('question', q_type=next_t, q_id=next_q) }}">
+                <button>></button>
+            </a>
+        </td>
+
+    </tr>
+</table>
 
 <p>{{ question_text }}</p>
 <p style="display: none" id="answer">{{ answer }}</p>

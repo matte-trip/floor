@@ -6653,6 +6653,8 @@ fill = [
 
 @app.route('/')
 def homepage():
+    global dark
+
     next_t = random.randint(0, 1)  # 2
     if next_t == 0:
         next_q = random.randint(0, len(multiple) - 1)

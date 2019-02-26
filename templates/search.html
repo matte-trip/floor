@@ -6,7 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 
-<body style="background-color: black; color: white; text-align: center">
+<script>
+
+    window.onload = function () {
+
+        let darkMode = localStorage.getItem("someVarKey");
+
+        if (darkMode === "no") {
+            document.getElementById("body").style.backgroundColor = 'white';
+            document.getElementById("body").style.color = 'black';
+        }
+
+        if (darkMode === "yes")  {
+            document.getElementById("body").style.backgroundColor = 'black';
+            document.getElementById("body").style.color = 'white';
+        }
+    };
+
+</script>
+
+<body id="body" style="background-color: black; color: white; text-align: center">
 
 <a href="{{ url_for('homepage') }}">
     <button>Homepage</button>

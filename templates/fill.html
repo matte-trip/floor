@@ -14,11 +14,35 @@
             document.getElementById("answer").style.display = '';
         };
 
+
+
+        document.getElementById("dark").style.display = 'none';
+
+        document.getElementById("light").onclick = function () {
+            document.getElementById("light").style.display = 'none';
+            document.getElementById("dark").style.display = '';
+
+            document.getElementById("body").style.backgroundColor = 'white';
+            document.getElementById("body").style.color = 'black';
+        };
+
+        document.getElementById("dark").onclick = function () {
+            document.getElementById("light").style.display = '';
+            document.getElementById("dark").style.display = 'none';
+
+            document.getElementById("body").style.backgroundColor = 'black';
+            document.getElementById("body").style.color = 'white';
+        };
+
     };
 
 </script>
 
-<body style="display: flex; flex-direction: column; background-color: black; color: white">
+<body id="body" style="display: flex; flex-direction: column; background-color: black; color: white">
+
+<button id="light" style="right: 0; top: 0; position: absolute">Light</button>
+<button id="dark" style="right: 0; top: 0; position: absolute">Dark</button>
+
 
 <a style="text-align: center" href="{{ url_for('homepage') }}">
     <button>Homepage</button>

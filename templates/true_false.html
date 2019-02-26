@@ -10,6 +10,8 @@
 
     window.onload = function () {
 
+        let darkMode = localStorage.getItem("someVarKey");
+
         document.getElementById("{{ answer }}").onclick = function () {
             document.getElementById("{{ answer }}").style.color = 'green';
         };
@@ -18,11 +20,20 @@
             document.getElementById("{{ wrong }}").style.color = 'red';
         };
 
+        if (darkMode === "no") {
+            document.getElementById("body").style.backgroundColor = 'white';
+            document.getElementById("body").style.color = 'black';
+        }
+
+        if (darkMode === "yes")  {
+            document.getElementById("body").style.backgroundColor = 'black';
+            document.getElementById("body").style.color = 'white';
+        }
     };
 
 </script>
 
-<body style="display: flex; flex-direction: column; background-color: black; color: white">
+<body id="body" style="display: flex; flex-direction: column; background-color: black; color: white">
 
 <a style="text-align: center" href="{{ url_for('homepage') }}">
     <button>Homepage</button>
